@@ -98,6 +98,10 @@ function keyPressed() {
     Matter.Body.setStatic(packageBody,false);
     
   }
+  else if (keyCode === UP_ARROW) {
+  //  Matter.Body.setStatic(packageBody,false);
+    Matter.Body.applyForce(packageBody, {x: 50, y: 50}, {x: 0, y: -0.05})
+  }
 }
 
 
